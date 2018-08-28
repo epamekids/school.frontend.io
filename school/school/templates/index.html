@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+
+<body>
+<div id="text">
+  <button onclick="Text()" id="button">Import random</button>
+</div>
+<div id="random">
+<p>Yoy random number: </p>
+</div>
+<script>
+  var text= $("#random").text()
+    function Text() {
+        $("#button").hide();
+        $.get("/random", function(data){
+          $("#random").text(text+data);
+     });
+}
+</script>
+</body>
+
+
