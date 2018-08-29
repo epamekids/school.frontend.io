@@ -3,5 +3,5 @@ from . import views
 
 
 urlpatterns = [
-	url('', views.randome, name='randome')
+	url('', views.rand, name='rand')
 ]
