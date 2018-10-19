@@ -1,6 +1,30 @@
+@media(max-width: 400px){
+	body{
+		width:100%;
+	}
+
+	.main{
+		background:blue;
+		width: 100%;
+		text-align: center;
+	}
+	.main>div{
+		margin:20px 20px 20px 20px;
+	}
+	#h1{
+		font-size:30px;
+	}
+
+} 
+
 .text, .random{
 	margin: 10px 0 0 10px;
 }
-body {
-	background-color :red;
+
+.main{
+	background-color: blue;
+	text-align: center;
+}
+.h {
+	border: 3px solid green;
 }
